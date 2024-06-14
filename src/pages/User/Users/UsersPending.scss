@@ -1,0 +1,53 @@
+.responsive-image {
+    width: 170px;
+    height: 170px;
+    margin-left: 25px;
+    margin-top: 8px;
+  }
+
+.responsive-role {
+    position: absolute; 
+    margin-left: 85px; 
+    margin-top: 140px;
+    font-family: fantasy;
+    font-size: 25px;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-width: 1px;
+}
+
+.responsive-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+    .responsive-image {
+      width: 100px;
+      height: 100px;
+      margin-top: 15px;
+    }
+    .responsive-role {
+        margin-left: 30px;
+        margin-top: 10px; 
+        -webkit-text-stroke: 1px;
+    }
+    .responsive-description {
+        margin-top: 15px;
+    }
+    .responsive-button2 {
+      display: none;
+    }
+    .responsive-button {
+      margin-left: 40px;
+    }
+}
+
+@media (min-width: 601px) {
+  .responsive-button {
+    display: none;
+  }
+  
+}
